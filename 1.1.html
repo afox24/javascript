@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1.1</title>
+</head>
+<body>
+<script>
+    'use strict'
+
+class Product {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+
+get make25PercentDiscount () {
+     return this.price - 0.25;
+}
+
+const product1 = new Product('iPhone', 50000);
+console.log(product1.name);
+console.log(product1.price);
+console.log(product1.make25PercentDiscount);
+   
+</script>
+    
+</body>
+</html>
