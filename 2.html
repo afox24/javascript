@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__items">
+        <div class="slider__item">
+          <img src="img/1.jpg" alt="Paris">
+        </div>
+        <div class="slider__item">
+          <img src="img/2.jpg" alt="Rome">
+        </div>
+        <div class="slider__item">
+          <img src="img/3.jpg" alt="New York">
+        </div>
+        <div class="slider__item">
+          <img src="img/4.jpg" alt="Sydney">
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button"></a>
+    <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+  </div>
+
+  <script src="2.js"></script>
+  <script>
+    slideShow('.slider', {
+      isAutoplay: true
+    });
+  </script>
+</body>
+</html>

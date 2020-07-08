@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <div id='container' class='Container'>
+        <h1>Наша книжная полка</h1>
+        <div class='Items'>
+            <div class='item' id='01' onclick> <img src='img/king1.jpg'>
+                <br>
+                <p class='price' id='1'>20</p>
+                <button class='item_button'>Купить</button>
+                <button class='del_button'>Удалить</button>
+            </div>
+            <div class='item' id='02' onclick> <img src='img/king2.jpg'>
+                <br>
+                <p class='price' id='2'>30</p>
+                <button class='item_button'>Купить</button>
+                <button class='del_button'>Удалить</button>
+            </div>
+            <div class='item' id='03'> <img src='img/king3.jpg' onclick>
+                <br>
+                <p class='price' id='3'>40</p>
+                <button class='item_button'>Купить</button>
+                <button class='del_button'>Удалить</button>
+            </div>
+        </div>
+        <hr>
+        <div class='RecycleContentFields'>
+            <h1>Корзина</h1>
+            <div class='recycleContent'> <address></address> </div>
+            <div class='infoblock'>
+                <p class='summ'>Общая сумма</p>
+                <button id='clear'>Очистить корзину</button>
+            </div>
+            <br>
+            <div id='recycle' onclick>
+                <div id='infotext'>Корзина пуста</div>
+            </div>
+        </div>
+    </div>
+    <script src="3.js"></script>
+</body>
+
+</html>

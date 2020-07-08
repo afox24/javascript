@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #fff;
+    height: 3000px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider__wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__items {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+}
+
+.slider__control_prev {
+    left: 0;
+}
+
+.slider__control_next {
+    right: 0;
+}
+
+.slider__control::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0 15%;
+    list-style: none;
+}
+
+.slider__indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.slider__indicators li.active {
+    background-color: #fff;
+}
+
+button {
+    font-family: sans-serif;
+    display: block;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: justify;
+    text-decoration: none;
+    background-color: skyblue;
+    width: 132px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: darkgrey;
+    background-color: white;
+}
+
+p {
+    color: #010101;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+.item p {
+    color: blue;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: White;
+    height: 100%;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+    height: 1120px;
+}
+
+.summ {
+    font-family: sans-serif;
+    color: #010101;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    width: 300px;
+    height: 100px
+}
+
+.Recycle {
+    margin-left: 0 auto;
+}
+
+.Recycle h1 {
+    padding-left: 200px;
+}
+
+#recycle {
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recycle .item_button {
+    display: none;
+}
+
+.del_button {
+    display: none;
+}
+
+#recycle .del_button {
+    display: block;
+}
+
+.Items {
+    width: auto;
+    display: flex;
+    padding: 5%;
+    height: 454px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#recycleButton {
+    float: right;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49.542px;
+    text-align: center;
+}
+
+.infoblock {
+    float: right;
+}
+
+hr {
+    color: blue;
+    height: 5px;
+}
