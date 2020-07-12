@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    border: 1px solid white;
+}
+.score {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.current {
+    font-weight: bold;
+    color: orange;
+}
